@@ -28,16 +28,18 @@ $(document).ready(function(){
 		return false;
 	});	
 	
-	$('#philosophy-toggle').on('click',function(){
+	$('body').on('click','.philosophy-toggle',function(){
 		if($('.collapsing').is(':visible')){
 			$('.collapsing').slideUp();
+			$('.philosophy-toggle').text('Read More');
 		}else{
 			$('.collapsing').slideDown();
+			$('.philosophy-toggle').text('Read Less');
 		}
 	});
 
 	var title_idx = 0;
-	var titles = ['Recreation Therapy Student','Musician','Artistic Mind'];
+	var titles = ['Recreation Therapy Student','Musician'];
 	setInterval(function () {
 		var idx = $('#nav-title').attr('data-idx');
 		if(idx == 2) idx = 0;

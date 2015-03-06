@@ -2,11 +2,20 @@ a{
 	color:#7ac143;
 	color:#444!important;
 }
-a:hover, a:visited{
-	color:#589921;
+.container a,.container a:hover,.container a:visited{
+	color:#8B4789!important;
+	font-weight: bold;
+}
+.navbar-inner .container a,.navbar-inner .container a:hover,.navbar-inner .container a:visited{
+	color:#fff!important;
+	font-weight: 100;
 }
 dd p{
 	font-size: 1em!important;
+}
+.philosophy-toggle{
+	color:#8B4789!important;
+	font-weight:bold;
 }
 h1, .nav > li > a, #banner .brand{
 	font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
@@ -38,6 +47,7 @@ ul{
 	display:inline-block;
 	padding:5px;
 	background-color: #8B4789;
+	background-color: #888;
 	color:#fff;
 	margin-top:5px;
 	font-size: 14px!important;
@@ -99,5 +109,4 @@ dt,dd{
 }
 dt{
 	background-color:#eee;
-	padding-bottom:5px;
 }
